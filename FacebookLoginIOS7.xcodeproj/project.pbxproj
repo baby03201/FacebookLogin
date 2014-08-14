@@ -19,6 +19,9 @@
 		EBB9B494199485B20059BD93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB9B47C199485B10059BD93 /* UIKit.framework */; };
 		EBB9B49C199485B20059BD93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBB9B49A199485B20059BD93 /* InfoPlist.strings */; };
 		EBB9B49E199485B20059BD93 /* FacebookLoginIOS7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB9B49D199485B20059BD93 /* FacebookLoginIOS7Tests.m */; };
+		EBB9B4A8199487B40059BD93 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB9B4A7199487B40059BD93 /* Storyboard.storyboard */; };
+		EBB9B4AA199490120059BD93 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB9B4A9199490120059BD93 /* FacebookSDK.framework */; };
+		EBB9B4F21994CFFE0059BD93 /* TestLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB9B4F11994CFFE0059BD93 /* TestLoginVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,10 @@
 		EBB9B499199485B20059BD93 /* FacebookLoginIOS7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FacebookLoginIOS7Tests-Info.plist"; sourceTree = "<group>"; };
 		EBB9B49B199485B20059BD93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EBB9B49D199485B20059BD93 /* FacebookLoginIOS7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FacebookLoginIOS7Tests.m; sourceTree = "<group>"; };
+		EBB9B4A7199487B40059BD93 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		EBB9B4A9199490120059BD93 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		EBB9B4F01994CFFE0059BD93 /* TestLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLoginVC.h; sourceTree = "<group>"; };
+		EBB9B4F11994CFFE0059BD93 /* TestLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLoginVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB9B4AA199490120059BD93 /* FacebookSDK.framework in Frameworks */,
 				EBB9B47B199485B10059BD93 /* CoreGraphics.framework in Frameworks */,
 				EBB9B47D199485B10059BD93 /* UIKit.framework in Frameworks */,
 				EBB9B479199485B10059BD93 /* Foundation.framework in Frameworks */,
@@ -77,6 +85,9 @@
 		EBB9B46C199485B10059BD93 = {
 			isa = PBXGroup;
 			children = (
+				EBB9B4A7199487B40059BD93 /* Storyboard.storyboard */,
+				EBB9B4F01994CFFE0059BD93 /* TestLoginVC.h */,
+				EBB9B4F11994CFFE0059BD93 /* TestLoginVC.m */,
 				EBB9B47E199485B10059BD93 /* FacebookLoginIOS7 */,
 				EBB9B497199485B20059BD93 /* FacebookLoginIOS7Tests */,
 				EBB9B477199485B10059BD93 /* Frameworks */,
@@ -96,6 +107,7 @@
 		EBB9B477199485B10059BD93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBB9B4A9199490120059BD93 /* FacebookSDK.framework */,
 				EBB9B478199485B10059BD93 /* Foundation.framework */,
 				EBB9B47A199485B10059BD93 /* CoreGraphics.framework */,
 				EBB9B47C199485B10059BD93 /* UIKit.framework */,
@@ -221,6 +233,7 @@
 			files = (
 				EBB9B483199485B10059BD93 /* InfoPlist.strings in Resources */,
 				EBB9B48B199485B20059BD93 /* Images.xcassets in Resources */,
+				EBB9B4A8199487B40059BD93 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBB9B489199485B20059BD93 /* AppDelegate.m in Sources */,
+				EBB9B4F21994CFFE0059BD93 /* TestLoginVC.m in Sources */,
 				EBB9B485199485B10059BD93 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +373,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/netccentricios/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookLoginIOS7/FacebookLoginIOS7-Prefix.pch";
 				INFOPLIST_FILE = "FacebookLoginIOS7/FacebookLoginIOS7-Info.plist";
@@ -372,6 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/netccentricios/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FacebookLoginIOS7/FacebookLoginIOS7-Prefix.pch";
 				INFOPLIST_FILE = "FacebookLoginIOS7/FacebookLoginIOS7-Info.plist";
@@ -439,6 +461,7 @@
 				EBB9B4A3199485B20059BD93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EBB9B4A4199485B20059BD93 /* Build configuration list for PBXNativeTarget "FacebookLoginIOS7Tests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +470,7 @@
 				EBB9B4A6199485B20059BD93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
